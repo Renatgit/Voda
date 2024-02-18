@@ -50,7 +50,7 @@ if (animItems.length > 0) {
 
 
             let animItemPoint = window.innerHeight - animItemHeight / animStart;
-
+            animItem.classList.add('_active');
             if (animItemHeight > window.innerHeight) {
                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }

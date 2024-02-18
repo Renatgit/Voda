@@ -12,11 +12,17 @@
     flex-direction:row;
     justify-content: center;
 }
-.analytics-foote-img{
+.analytics-footer-img {
     position: absolute;
     width: 100%;
     height: auto;
     z-index: -99999;
+    bottom: -100px;
+    transition: all 1.2s ease 0s;
+}
+.analytics-footer-img._active {
+    bottom: 0px;
+    transition: all 1.2s ease 0s;
 }
 .footer-content {
     width: 884px;
@@ -26,8 +32,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    transition: all 2s ease 0.5s;
 }
-.footer-drop{
+.footer-content._active {
+    opacity: 1;
+    transition: all 2s ease 0.5s;
+}
+.footer-drop {
     margin: 0;
 }
 .footer-content-text-down {
@@ -231,17 +243,25 @@
 }
 .percentage-of-ball-daily {
     position: relative;
-    bottom: -50px;
+    bottom: -120px;
     flex: none;
+}
+.percentage-of-ball-daily._active {
+    bottom: -50px;
+    transition: all 1.2s ease 0s;
 }
 .percentage-of-ball-monthly {
     position: relative;
+    bottom: -120px;
+    transition: all 1.2s ease 0s;
+}
+.percentage-of-ball-monthly._active{
     bottom: -50px;
 }
 ::-webkit-scrollbar {
     display: none;
 }
-.percentage-of-ball-daily-text-wrapper{
+.percentage-of-ball-daily-text-wrapper {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -249,6 +269,12 @@
     align-items: center;
     margin: 50px 50px;
     z-index: 999;
+    opacity: 0;
+    transition: all 1.2s ease 1s;
+}
+.percentage-of-ball-daily-text-wrapper._active{
+    opacity: 1;
+    transition: all 1.2s ease 1s;
 }
 .percentage-ball-text-decoration {
     color: #272727;
