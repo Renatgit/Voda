@@ -1,0 +1,115 @@
+﻿.signinupBody {
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+}
+.logo-text-one.signin{
+    color: #ffffff;
+}
+.logo-text-two.signin {
+    color: #ffffff;
+}
+.points.singin {
+    color: #ffffff;
+}
+.auth-form-container {
+    align-self: center;
+    position: relative;
+    width: 700px;
+    height: 600px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px #000;
+    margin-top: 20px;
+    padding: 25px;
+}
+.auth-form-content {
+    display: flex;
+    width: 650px;
+    padding: 24px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 22px;
+}
+.form-label {
+    color: #272727;
+    font-family: "Baloo 2";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.form-information-input-container {
+    width: 650px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.username-input-container {
+    display: inline-flex;
+    padding-right: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.password-input-container {
+    display: inline-flex;
+    padding-right: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.post-btn {
+    align-self: center;
+    display: inline-flex;
+    width: 225px;
+    height: 75px;
+    padding: 5px 52px 5px 53px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: "Baloo 2";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 20px;
+    background: #272727;
+    margin-top: 40px;
+}
+.field-label {
+    color: #272727;
+    font-family: "Baloo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.input-field {
+    width: 592px;
+    height: 62px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: 3px solid #A3A3A3;
+    background: #FFF;
+    font-family: "Baloo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.hint-text {
+    align-self: center;
+    color: #272727;
+    font-family: "Baloo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -10px;
+}
+.link-sign{
+    display: contents;
+}

@@ -1,0 +1,260 @@
+﻿@page
+@model Voda.Pages.AnalyticsModel
+@{
+    ViewData["Title"] = "Analytics";
+}
+
+<body class="analyticsBody">
+    <header class="header-container _anim-items">
+    <div class="logo-container">
+        <a asp-area="" asp-page="/Index">
+            <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop" />
+        </a>
+        <a asp-area="" asp-page="/Index">
+            <div class="logo-text-container">
+                <p class="logo-text-one signin">V</p>
+                <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop-text" />
+                <p class="logo-text-two signin">DA</p>
+            </div>
+        </a>
+    </div>
+    <div class="points-balance">
+        <p class="points singin">0</p>
+        <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop-text" />
+    </div>
+    <a href="#" class="menu-bar" id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="23" viewBox="0 0 40 23" fill="none" class="menu-bar_notactive">
+            <rect class="line-one" id="line-one" width="40" height="5" rx="2.5" fill="#ffffff" />
+            <rect class="line-two" id="line-two" y="9" width="40" height="5" rx="2.5" fill="#ffffff" />
+            <rect class="line-three" id="line-three" y="18" width="40" height="5" rx="2.5" fill="#ffffff" />
+        </svg>
+    </a>
+    </header>
+
+    @* Main *@
+    <div class="analytics-wrapper">
+        <div class="analytics-water-log">
+            <p class="water-log-header">Water Log</p>
+            <div class="water-log-content-wrapper">
+                <div class="water-log-frame">
+                    @* Single record *@
+                    <div class="water-record">
+                        <p class="record-time">13:58</p>
+                        <div class="water-data-container">
+                            <p class="water-log-amount">2.5</p>
+                            <p class="water-log-litres">litres</p>
+                        </div>
+                        <lord-icon src="https://cdn.lordicon.com/drxwpfop.json"
+                                   trigger="hover"
+                                   stroke="bold"
+                                   colors="primary:#272727,secondary:#272727"
+                                   style="width:28px;height:28px">
+                        </lord-icon>
+                    </div>
+                    @* Single record *@
+                    <div class="water-record">
+                        <p class="record-time">14:38</p>
+                        <div class="water-data-container">
+                            <p class="water-log-amount">2.5</p>
+                            <p class="water-log-litres">litres</p>
+                        </div>
+                        <lord-icon src="https://cdn.lordicon.com/drxwpfop.json"
+                                   trigger="hover"
+                                   stroke="bold"
+                                   colors="primary:#272727,secondary:#272727"
+                                   style="width:28px;height:28px">
+                        </lord-icon>
+                    </div>
+                    @* Single record *@
+                    <div class="water-record">
+                        <p class="record-time">15:34</p>
+                        <div class="water-data-container">
+                            <p class="water-log-amount">2.5</p>
+                            <p class="water-log-litres">litres</p>
+                        </div>
+                        <lord-icon src="https://cdn.lordicon.com/drxwpfop.json"
+                                   trigger="hover"
+                                   stroke="bold"
+                                   colors="primary:#272727,secondary:#272727"
+                                   style="width:28px;height:28px">
+                        </lord-icon>
+                    </div>
+                    @* Single record *@
+                    <div class="water-record">
+                        <p class="record-time">17:51</p>
+                        <div class="water-data-container">
+                            <p class="water-log-amount">2.5</p>
+                            <p class="water-log-litres">litres</p>
+                        </div>
+                        <lord-icon src="https://cdn.lordicon.com/drxwpfop.json"
+                                   trigger="hover"
+                                   stroke="bold"
+                                   colors="primary:#272727,secondary:#272727"
+                                   style="width:28px;height:28px">
+                        </lord-icon>
+                    </div>
+                    @* Single record *@
+                    <div class="water-record">
+                        <p class="record-time">13:58</p>
+                        <div class="water-data-container">
+                            <p class="water-log-amount">2.5</p>
+                            <p class="water-log-litres">litres</p>
+                        </div>
+                        <lord-icon src="https://cdn.lordicon.com/drxwpfop.json"
+                                   trigger="hover"
+                                   stroke="bold"
+                                   colors="primary:#272727,secondary:#272727"
+                                   style="width:28px;height:28px">
+                        </lord-icon>
+                    </div>
+                </div>
+                <button class="add-new-log-btn">
+                    Add new
+                    <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="add-new-logo" width ="20px" height="20px"/>
+                </button>
+            </div>
+        </div>
+
+        <div class="water-usage">
+            <p class="water-usage-header">Water Usage</p>
+            <div class="water-usage-limits-warpper">
+                <div class="water-usage-daily-limit-container limit-design">
+                    <p class="water-usage-label">Today's limit</p>
+                    <div class="water-usage-percentage-ball">
+                        <div class="percentage-of-ball-daily-text-wrapper">
+                            <p class="percentage-of-ball-daily-text percentage-ball-text-decoration">65%</p>
+                            <p class="percentage-of-ball-daily-text-description percentage-ball-text-decoration-small">spent</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="151" viewBox="0 0 150 151" fill="none" class="percentage-of-ball-daily">
+                            <path d="M0 0L6.0552 2.0184C26.4663 8.82211 48.5337 8.82212 68.9448 2.0184V2.0184C72.8827 0.705774 77.1326 0.658205 81.0989 1.88236L83.4648 2.61259C104.253 9.0287 126.567 8.49039 147.021 1.0793L150 0V151H0V0Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="limit-container-daily data-about-usage">
+                        <p class="already-used-daily water-uage-text-decoration">6.5</p>
+                        <p class="slash water-uage-text-decoration">/</p>
+                        <p class="goal-daily water-uage-text-decoration">10</p>
+                        <p class="litres-label-usage water-uage-text-decoration">litres</p>
+                    </div>
+                </div>
+                <div class="water-usage-monthly-limit-container limit-design">
+                    <p class="water-usage-label">Monthly goal</p>
+                    <div class="water-usage-percentage-ball">
+                        <div class="percentage-of-ball-daily-text-wrapper">
+                            <p class="percentage-of-ball-montly-text percentage-ball-text-decoration">65%</p>
+                            <p class="percentage-of-ball-monthy-text-description percentage-ball-text-decoration-small">saved</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="151" viewBox="0 0 150 151" fill="none" class="percentage-of-ball-monthly">
+                            <path d="M0 0L6.0552 2.0184C26.4663 8.82211 48.5337 8.82212 68.9448 2.0184V2.0184C72.8827 0.705774 77.1326 0.658205 81.0989 1.88236L83.4648 2.61259C104.253 9.0287 126.567 8.49039 147.021 1.0793L150 0V151H0V0Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="limit-container-monthly data-about-usage">
+                        <p class="already-used-daily water-uage-text-decoration">65</p>
+                        <p class="slash water-uage-text-decoration">/</p>
+                        <p class="goal-daily water-uage-text-decoration">100</p>
+                        <p class="litres-label-usage water-uage-text-decoration">litres</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Footer *@
+    <footer class="analytics-footer">
+        <div class="footer-content">
+            <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-text footer-drop" />
+            <div class="footer-content-text-wrapper">
+                <p class="footer-content-text-upper">The more water you save per day, the more drop points you get</p>
+                <div class="footer-content-texr-down-wrapper">
+                    <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-text footer-drop" />
+                    <p class="footer-content-text-down">= litres water will be donated</p>
+                </div>
+            </div>
+            <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-text footer-drop" />
+        </div>
+
+        <img src="~/img/analytics-footer.png" alt="Footer" class="analytics-foote-img" />
+    </footer>
+
+    @* Side bar menu *@
+    <div class="bar-menu--closed" id="bar-menu">
+        <header class="side-menu-header">
+            <div class="points-balance-side">
+                <p class="points-side">0</p>
+                <img src="~/img/DROP LOGO WHITE.png" alt="Drops" class="logo-drop-text" />
+            </div>
+            <a href="#" class="menu-bar" id="menu-btn-open">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="23" viewBox="0 0 40 23" fill="none" class="menu-bar_active">
+                    <rect class="line-oneActive" id="line-oneActive" width="40" height="5" rx="2.5" fill="#ffffff" />
+                    <rect class="line-twoActive" id="line-twoActive" y="9" width="40" height="5" rx="2.5" fill="#ffffff" />
+                    <rect class="line-threeActive" id="line-threeActive" y="18" width="40" height="5" rx="2.5" fill="#ffffff" />
+                </svg>
+            </a>
+        </header>
+        @* Links to other pages *@
+        <div class="side-bar-content">
+            @* Profile *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Profile">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/kthelypq.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Profile</p>
+                </div>
+            </a>
+            @* Analytics *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Analytics">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/whrxobsb.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Analytics</p>
+                </div>
+            </a>
+            @* Settings *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Settings">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/lecprnjb.json"
+                               trigger="hover"
+                               state="hover-cog-2"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Settings</p>
+                </div>
+            </a>
+            @* Info *@
+            <a href="https://www.theworldcounts.com/challenges/planet-earth/state-of-the-planet/when-will-the-world-run-out-of-water" class="page-link-btn" id="">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/yxczfiyc.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Info</p>
+                </div>
+            </a>
+        </div>
+        <div class="auth-buttons-container">
+            <a class="auth-buttons-link" asp-area="" asp-page="/SignIn">
+                <div class="auth-btn-design">
+                    <div class="auth-btn-text-container">
+                        <p class="auth-btn-text">Sign in</p>
+                        <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-btn" />
+                    </div>
+                </div>
+            </a>
+            <a class="auth-buttons-link" asp-area="" asp-page="/SignUp">
+                <div class="auth-btn-design">
+                    <div class="auth-btn-text-container">
+                        <p class="auth-btn-text">Sign up</p>
+                        <img src="~/img/Group plus.png" alt="Logo" class="logo-drop-btn" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>

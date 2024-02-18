@@ -1,0 +1,212 @@
+﻿.settingsBody{
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 71px;
+}
+.settings-info-grid {
+    width: 92vw;
+    height: 335px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.single-setting-container {
+    width: 368px;
+    height: 139px;
+    border-radius: 20px;
+    background: #2A2A2A;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.single-setting-header {
+    color: #FFF;
+    font-family: "Baloo 2";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.single-setting-data {
+    color: #FFF;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -10px;
+}
+.single-setting-label-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.slide-on-off {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.changible {
+    margin-left: 50px;
+}
+.save-settings-btn {
+    width: 230px;
+    height: 60px;
+    border-radius: 20px;
+    background: #FFF;
+    color: #272727;
+    font-family: "Baloo 2";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.save-btn-logo {
+    margin: 0;
+}
+.footer-content-text-upper-margin-add {
+    margin-top: 15px;
+}
+
+
+
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.switch input {
+   display: none;
+}
+
+.slider {
+    background-color: #fff;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #272727;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: #272727;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: #fff;
+ }
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.information-enter-form-container {
+    position: absolute;
+    top: -100vh;
+}
+
+
+.information-enter-form-container.-active {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #000000ab;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+.settings-enter-form {
+    width: 550px;
+    height: 300px;
+    border-radius: 20px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.input-form-cross-color{
+    fill: #272727;
+    position: absolute;
+}
+.input-form-header {
+    color: #000;
+    font-family: "Baloo 2";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 150px;
+}
+.input-form-header-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+.input-form-cross{
+    margin-left: 110px;
+}
+.input-form-field {
+    width: 450px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: 3px solid #A3A3A3;
+    background: #FFF;
+    color: #000;
+    font-family: "Baloo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.input-form-btn {
+    width: 230px;
+    height: 60px;
+    border-radius: 20px;
+    background: #272727;
+    color: #FFF;
+    font-family: "Baloo 2";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

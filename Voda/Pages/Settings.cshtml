@@ -1,0 +1,242 @@
+﻿@page
+@model Voda.Pages.SettingsModel
+@{
+    ViewData["Title"] = "Settings";
+}
+
+<body class="settingsBody">
+    <header class="header-container _anim-items">
+        <div class="logo-container">
+            <a asp-area="" asp-page="/Index">
+                <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop" />
+            </a>
+            <a asp-area="" asp-page="/Index">
+                <div class="logo-text-container">
+                    <p class="logo-text-one signin">V</p>
+                    <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop-text" />
+                    <p class="logo-text-two signin">DA</p>
+                </div>
+            </a>
+        </div>
+        <div class="points-balance">
+            <p class="points singin">0</p>
+            <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop-text" />
+        </div>
+        <a href="#" class="menu-bar" id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="23" viewBox="0 0 40 23" fill="none" class="menu-bar_notactive">
+                <rect class="line-one" id="line-one" width="40" height="5" rx="2.5" fill="#ffffff" />
+                <rect class="line-two" id="line-two" y="9" width="40" height="5" rx="2.5" fill="#ffffff" />
+                <rect class="line-three" id="line-three" y="18" width="40" height="5" rx="2.5" fill="#ffffff" />
+            </svg>
+        </a>
+    </header>
+    <div class="settings-info-grid">
+        @* Single setting *@
+        <div class="single-setting-container">
+            <p class="single-setting-header">Username</p>
+            <p class="single-setting-data username-data">renat</p>
+        </div>
+        @* Single setting *@
+        <div class="single-setting-container">
+            <div class="single-setting-label-container">
+                <p class="single-setting-header changible">Date of birth</p>
+                <a href="#" class="change-setting" id="date-of-birth-change">
+                    <lord-icon src="https://cdn.lordicon.com/wuvorxbv.json"
+                               trigger="hover"
+                               stroke="bold"
+                               state="hover-line"
+                               colors="primary:#ffffff,secondary:#ffffff"
+                               style="width:40px;height:40px">
+                    </lord-icon>
+                </a>
+            </div>
+            <p class="single-setting-data date-of-birth-data">30/11/2006</p>
+        </div>
+        @* Single setting *@
+        <div class="single-setting-container">
+            <div class="single-setting-label-container">
+                <p class="single-setting-header changible">Email</p>
+                <a href="#" class="change-setting" id="email-change">
+                    <lord-icon src="https://cdn.lordicon.com/wuvorxbv.json"
+                               trigger="hover"
+                               stroke="bold"
+                               state="hover-line"
+                               colors="primary:#ffffff,secondary:#ffffff"
+                               style="width:40px;height:40px">
+                    </lord-icon>
+                </a>
+            </div>
+            <p class="single-setting-data email-data">ber047@cliftoncollege.com</p>
+        </div>
+        @* Single setting *@
+        <div class="single-setting-container">
+            <div class="single-setting-label-container">
+                <p class="single-setting-header changible">Your goal</p>
+                <a href="#" class="change-setting" id="goal-change">
+                    <lord-icon src="https://cdn.lordicon.com/wuvorxbv.json"
+                               trigger="hover"
+                               stroke="bold"
+                               state="hover-line"
+                               colors="primary:#ffffff,secondary:#ffffff"
+                               style="width:40px;height:40px">
+                    </lord-icon>
+                </a>
+            </div>
+            <p class="single-setting-data goal-data">100 litres</p>
+        </div>
+        @* Single setting *@
+        <div class="single-setting-container">
+            <div class="single-setting-label-container">
+                <p class="single-setting-header">Notifications</p>
+            </div>
+            <div class="slide-on-off">
+                <p class="single-setting-data">On</p>
+                <div class="container">
+                    <label class="switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <p class="single-setting-data">Off</p>
+            </div>
+            
+        </div>
+        @* Single setting *@
+        <div class="single-setting-container">
+            <div class="single-setting-label-container">
+                <p class="single-setting-header changible">Country</p>
+                <a href="#" class="change-setting" id="country-change">
+                    <lord-icon src="https://cdn.lordicon.com/wuvorxbv.json"
+                               trigger="hover"
+                               stroke="bold"
+                               state="hover-line"
+                               colors="primary:#ffffff,secondary:#ffffff"
+                               style="width:40px;height:40px">
+                    </lord-icon>
+                </a>
+            </div>
+            <p class="single-setting-data goal-data">United Kindom</p>
+        </div>
+    </div>
+    <button class="save-settings-btn">
+        <p>Save</p>
+        <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-text save-btn-logo" />
+    </button>
+    @* Footer *@
+    <footer class="analytics-footer">
+        <div class="footer-content">
+            <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-text footer-drop" />
+            <div class="footer-content-text-wrapper">
+                <p class="footer-content-text-upper footer-content-text-upper-margin-add">If you have any issues with our website, tell us about it email@email.com</p>
+            </div>
+            <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-text footer-drop" />
+        </div>
+
+        <img src="~/img/analytics-footer.png" alt="Footer" class="analytics-foote-img" />
+    </footer>
+
+
+
+
+    @* Side bar menu *@
+    <div class="bar-menu--closed" id="bar-menu">
+        <header class="side-menu-header">
+            <div class="points-balance-side">
+                <p class="points-side">0</p>
+                <img src="~/img/DROP LOGO WHITE.png" alt="Drops" class="logo-drop-text" />
+            </div>
+            <a href="#" class="menu-bar" id="menu-btn-open">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="23" viewBox="0 0 40 23" fill="none" class="menu-bar_active">
+                    <rect class="line-oneActive" id="line-oneActive" width="40" height="5" rx="2.5" fill="#ffffff" />
+                    <rect class="line-twoActive" id="line-twoActive" y="9" width="40" height="5" rx="2.5" fill="#ffffff" />
+                    <rect class="line-threeActive" id="line-threeActive" y="18" width="40" height="5" rx="2.5" fill="#ffffff" />
+                </svg>
+            </a>
+        </header>
+        @* Links to other pages *@
+        <div class="side-bar-content">
+            @* Profile *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Profile">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/kthelypq.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Profile</p>
+                </div>
+            </a>
+            @* Analytics *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Analytics">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/whrxobsb.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Analytics</p>
+                </div>
+            </a>
+            @* Settings *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Settings">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/lecprnjb.json"
+                               trigger="hover"
+                               state="hover-cog-2"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Settings</p>
+                </div>
+            </a>
+            @* Info *@
+            <a href="https://www.theworldcounts.com/challenges/planet-earth/state-of-the-planet/when-will-the-world-run-out-of-water" class="page-link-btn" id="">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/yxczfiyc.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Info</p>
+                </div>
+            </a>
+        </div>
+        <div class="auth-buttons-container">
+            <a class="auth-buttons-link" asp-area="" asp-page="/SignIn">
+                <div class="auth-btn-design">
+                    <div class="auth-btn-text-container">
+                        <p class="auth-btn-text">Sign in</p>
+                        <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-btn" />
+                    </div>
+                </div>
+            </a>
+            <a class="auth-buttons-link" asp-area="" asp-page="/SignUp">
+                <div class="auth-btn-design">
+                    <div class="auth-btn-text-container">
+                        <p class="auth-btn-text">Sign up</p>
+                        <img src="~/img/Group plus.png" alt="Logo" class="logo-drop-btn" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="information-enter-form-container" id="main-input-form-container">
+        <form class="settings-enter-form">
+            <div class="input-form-header-container">
+                <p class="input-form-header">Enter the info</p>
+                <a href="#" class="input-form-cross" id="input-form-cross">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="23" viewBox="0 0 40 23" fill="none" class="menu-bar_active">
+                        <rect class="line-oneActive input-form-cross-color" id="line-oneActive" width="40" height="5" rx="2.5" fill="#272727" />
+                        <rect class="line-twoActive input-form-cross-color" id="line-twoActive" y="9" width="40" height="5" rx="2.5" fill="#272727" />
+                        <rect class="line-threeActive input-form-cross-color" id="line-threeActive" y="18" width="40" height="5" rx="2.5" fill="#272727" />
+                    </svg>
+                </a>
+            </div>
+            <input class="input-form-field" type="text" id="info" name="info" />
+            <input type="submit" class="input-form-btn" value="Save"/>
+        </form>
+    </div>
+</body>
+<script src="~/js/settings-page.js"></script>

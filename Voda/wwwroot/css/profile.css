@@ -1,0 +1,152 @@
+﻿.profileBody{
+    display: flex;
+    flex-direction: column;
+}
+.background-block {
+    width: 100%;
+    height: auto;
+}
+.background-block-img {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    left: 0;
+    bottom: -300px;
+    z-index: -9999999;
+}
+.background-block-img._active{
+    bottom: 0px;
+    transition: all 1.2s ease 0s;
+}
+.information-container {
+    width: 100vw;
+    height: 50vh;
+}
+.profile-welcome-container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    height: 28vh;
+}
+.pfp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    overflow: hidden;
+}
+.profile-picture-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+}
+.welcome-text {
+    color: #272727;
+    font-family: "Baloo 2";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.username-welcome {
+    color: #272727;
+    font-family: "Baloo 2";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.welcome-text-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    align-items: center;
+    padding-top: 67px;
+    padding-left: 20px;
+}
+.infromation-description-container {
+    width: 368px;
+    height: 139px;
+    border-radius: 20px;
+    background: #2A2A2A;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11px;
+    gap: 15px;
+    opacity: 0;
+    transition: all 1.2s ease 0s;
+}
+.infromation-description-container._active{
+    opacity: 1;
+    transition: all 1.2s ease 1s;
+}
+.information-flex-container-1 {
+    width: 1307px;
+    height: 148px;
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+}
+.information-flex-container-2 {
+    width: 844px;
+    height: 148px;
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+}
+.desctiprion-name {
+    color: #FFF;
+    font-family: "Baloo 2";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.desctiprion-data {
+    color: #FFF;
+    font-family: "Baloo 2";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.desctiprion-data.email{
+    color: #FFF;
+    font-family: "Baloo 2";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.litres-text {
+    color: #FFF;
+    font-family: "Baloo 2";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.saved-water-data{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.drop-balance-data {
+    display: flex;
+    flex-direction: row;
+}
+.logo-drop-text.analytics-logo {
+    margin: 0;
+}

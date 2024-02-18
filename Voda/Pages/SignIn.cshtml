@@ -1,0 +1,139 @@
+﻿@page
+@model Voda.Pages.Sign_inModel
+@{
+    ViewData["Title"] = "Sign in";
+}
+
+<body class="signinupBody">
+    <header class="header-container _anim-items">
+        <div class="logo-container">
+            <a asp-area="" asp-page="/Index">
+                <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop" />
+            </a>
+            <a asp-area="" asp-page="/Index">
+                <div class="logo-text-container">
+                    <p class="logo-text-one signin">V</p>
+                    <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop-text" />
+                    <p class="logo-text-two signin">DA</p>
+                </div>
+            </a>
+        </div>
+        <div class="points-balance">
+            <p class="points singin">0</p>
+            <img src="~/img/DROP LOGO WHITE.png" alt="Logo" class="logo-drop-text" />
+        </div>
+        <a href="#" class="menu-bar" id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="23" viewBox="0 0 40 23" fill="none" class="menu-bar_notactive">
+                <rect class="line-one" id="line-one" width="40" height="5" rx="2.5" fill="#ffffff" />
+                <rect class="line-two" id="line-two" y="9" width="40" height="5" rx="2.5" fill="#ffffff" />
+                <rect class="line-three" id="line-three" y="18" width="40" height="5" rx="2.5" fill="#ffffff" />
+            </svg>
+        </a>
+    </header>
+    <div class="auth-form-container">
+        <form class="auth-form-content">
+            <p class="form-label">Sign in</p>
+            <div class="form-information-input-container">
+                <div class="username-input-container">
+                    <label class="field-label">Username</label><br>
+                    <input class="input-field" type="text" id="username" name="username" />
+                </div>
+                <div class="password-input-container">
+                    <label class="field-label">Password</label><br>
+                    <input class ="input-field" type="text" id="password" name="password" />
+                </div>
+                <input class="post-btn" type="submit" value="Sign in" />
+            </div>
+            <a class="link-sign" asp-area="" asp-page="/SignUp">
+                <p class="hint-text">Don’t have an account? Create one!</p>
+            </a>
+
+        </form>
+    </div>
+
+
+
+    @* Side bar menu *@
+    <div class="bar-menu--closed" id="bar-menu">
+        <header class="side-menu-header">
+            <div class="points-balance-side">
+                <p class="points-side">0</p>
+                <img src="~/img/DROP LOGO WHITE.png" alt="Drops" class="logo-drop-text" />
+            </div>
+            <a href="#" class="menu-bar" id="menu-btn-open">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="23" viewBox="0 0 40 23" fill="none" class="menu-bar_active">
+                    <rect class="line-oneActive" id="line-oneActive" width="40" height="5" rx="2.5" fill="#ffffff" />
+                    <rect class="line-twoActive" id="line-twoActive" y="9" width="40" height="5" rx="2.5" fill="#ffffff" />
+                    <rect class="line-threeActive" id="line-threeActive" y="18" width="40" height="5" rx="2.5" fill="#ffffff" />
+                </svg>
+            </a>
+        </header>
+        @* Links to other pages *@
+        <div class="side-bar-content">
+            @* Profile *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Profile">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/kthelypq.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Profile</p>
+                </div>
+            </a>
+            @* Analytics *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Analytics">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/whrxobsb.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Analytics</p>
+                </div>
+            </a>
+            @* Settings *@
+            <a class="page-link-btn" id="" asp-area="" asp-page="/Settings">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/lecprnjb.json"
+                               trigger="hover"
+                               state="hover-cog-2"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Settings</p>
+                </div>
+            </a>
+            @* Info *@
+            <a href="https://www.theworldcounts.com/challenges/planet-earth/state-of-the-planet/when-will-the-world-run-out-of-water" class="page-link-btn" id="">
+                <div class="page-link-container">
+                    <lord-icon src="https://cdn.lordicon.com/yxczfiyc.json"
+                               trigger="hover"
+                               colors="primary:#ffffff"
+                               class="page-link-icon">
+                    </lord-icon>
+                    <p class="page-link-description">Info</p>
+                </div>
+            </a>
+        </div>
+        <div class="auth-buttons-container">
+            <a class="auth-buttons-link" asp-area="" asp-page="/SignIn">
+                <div class="auth-btn-design">
+                    <div class="auth-btn-text-container">
+                        <p class="auth-btn-text">Sign in</p>
+                        <img src="~/img/Drop_logo.png" alt="Logo" class="logo-drop-btn" />
+                    </div>
+                </div>
+            </a>
+            <a asp-area="" asp-page="/SignUp" class="auth-buttons-link">
+                <div class="auth-btn-design">
+                    <div class="auth-btn-text-container">
+                        <p class="auth-btn-text">Sign up</p>
+                        <img src="~/img/Group plus.png" alt="Logo" class="logo-drop-btn" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
