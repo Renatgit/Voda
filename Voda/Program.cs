@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<AccountContext>(options =>
 {
-    options.UseSqlServer()
-})
+    options.UseSqlServer("Data Source=-PC\\SQLEXPRESS;Integrated Security=True;Trust Server Certificate=True");
+});
 
 var app = builder.Build();
 

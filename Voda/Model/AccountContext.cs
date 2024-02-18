@@ -7,7 +7,10 @@ namespace Voda.Model
         public DbSet<User> tblUsers { get; set; }
         public AccountContext(DbContextOptions options) : base(options)
         {
-
+            
         }
+
+        
+
     }
 }

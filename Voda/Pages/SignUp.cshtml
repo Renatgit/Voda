@@ -31,18 +31,18 @@
         </a>
     </header>
     <div class="auth-form-container">
-        <form class="auth-form-content">
+        <form class="auth-form-content" id="sign-up-form" method="post">
             <p class="form-label">Sign up</p>
             <div class="form-information-input-container">
                 <div class="username-input-container">
-                    <label class="field-label">Username</label><br>
+                    <label class="field-label">Username<p class="username-error-message" id="username-error">(at least 1 character)</p></label><br>
                     <input class="input-field" type="text" id="username" name="username" />
                 </div>
                 <div class="password-input-container">
-                    <label class="field-label">Password</label><br>
+                    <label class="field-label">Password<p class="password-error-message" id="password-error">(at least 8 characters)</p></label><br>
                     <input class="input-field" type="text" id="password" name="password" />
                 </div>
-                <input class="post-btn" type="submit" value="Sign up" />
+                <input class="post-btn" id="signUp-btn" type="submit" value="Sign up" />
             </div>
             <a class="link-sign" asp-area="" asp-page="/SignIn">
                 <p class="hint-text">Already have an account? Sign in!</p>
@@ -139,3 +139,4 @@
         </div>
     </div>
 </body>
+<script src="~/js/Singup.js"></script>
